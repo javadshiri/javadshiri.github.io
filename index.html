@@ -1,7 +1,39 @@
 <html>
 <head>
 
+    <script>
+        onerror=l;
+        function  l(w,e,r)
+        {
+            document.write(w+e+r);
+        }
+    </script>
+
+
+    <script type="application/javascript">
+        var k
+        function getIP(json) {
+            k= json.ip
+        }
+    </script>
+    <script type="application/javascript"
+            src="http://api.ipify.org?format=jsonp&callback=getIP"></script>
+
+
+
+
     
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -130,6 +162,7 @@
                     keys = this.canvasKey(keys);
                     keys = this.webglKey(keys);
                     keys = this.date(keys);
+                    keys = this.ext(keys);
                     
                     keys = this.adBlockKey(keys);
                     keys = this.hasLiedLanguagesKey(keys);
